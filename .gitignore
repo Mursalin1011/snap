@@ -1,0 +1,36 @@
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.dll
+
+# --- NuGet ---
+packages/
+
+# --- IDE specific files ---
+*.csproj.user
+*.suo
+*.user
+*.sdf
+*.vspscc
+.vs/
+[Dd]ata[Cc]ollections/
+
+# --- Visual Studio ---
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# --- Other ---
+.vspscc
+.DS_Store
+*.bak
+*.tmp
+*.log
+*.cache
+*.zip
+*.ncrunch*
+[Ee]xpress/
+*.publish.xml
+*.vsct
