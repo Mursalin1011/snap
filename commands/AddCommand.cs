@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace snap.commands
 {
-    internal class AddCommand
+    public class AddCommand
     {
+
     }
 }
