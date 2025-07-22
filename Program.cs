@@ -1,4 +1,6 @@
-﻿class Program
+﻿using snap.commands;
+
+class Program
 {
     static void Main(string[] args)
     {
@@ -12,6 +14,9 @@
         {
             case "init":
                 InitCommand.Run();
+                break;
+            case "add":
+                AddCommand.Run();
                 break;
 
             default:

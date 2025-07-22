@@ -1,4 +1,5 @@
 ﻿
+
 ### How to make the app a global command line app
 ```bash
 dotnet publish -c Release -r win-x64 --self-contained false -o ./publish
@@ -119,6 +120,10 @@ Like having a mixer that you can change blades for — one blade chops, one blen
 
 >  **Why?** These classes represent **data**, not behavior.  
 >  They’re immutable. If content changes, it's a new blob.
-
 Think of it like a cake — once baked, you can’t change it. You just bake another if needed.
+---
+### Hasher
 
+We need to convert the string to byte array first in order to generate the hash.
+Hasher generates unique hash for the content of the file.
+C# `ComputeHash()` also returns a byte array, so we convert it to a hex string for easier readability and storage.
