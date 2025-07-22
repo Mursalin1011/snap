@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using snap.Infra;
+using snap.Core;
 
 namespace snap.commands
 {
@@ -25,7 +25,9 @@ namespace snap.commands
             }
 
             //Get the whole file -> Generate Hash -> Prepare blob
-            var fileContent = File.ReadAllTextAsync(filePath);
+            var fileContent = File.ReadAllTextAsync(filePath).Result;
+            IHasher hasher = new Sha256Hasher();
+            Blob blob = new Blob(fileContent, hasher);
         }
     }
 }
