@@ -16,7 +16,7 @@ class Program
                 InitCommand.Run();
                 break;
             case "add":
-                AddCommand.Run();
+                AddCommand.Run(args);
                 break;
 
             default:

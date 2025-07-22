@@ -26,7 +26,6 @@ namespace snap.commands
 
             //Get the whole file -> Generate Hash -> Prepare blob
             var fileContent = File.ReadAllTextAsync(filePath);
-
         }
     }
 }
