@@ -21,7 +21,6 @@ namespace snap.Core
         }
         public void Save(string objectsPath)
         {
-            // Save the blob content to a file named with its hash
             string objectPath = Path.Combine(objectsPath, Hash);
             if (!File.Exists(objectPath))
             {
